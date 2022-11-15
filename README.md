@@ -9,7 +9,7 @@
 
 <p align='center'>
 Plataforma digital para vendas de jogos. O projeto foi desenvolvido no decorrer do curso
-  <a href='https://www.udemy.com/course/react-avancado/'>React Avançado - Willian Justen<a />
+  <a href='https://www.udemy.com/course/react-avancado/'>React Avançado - Willian Justen<a/>
 </p>
 
 <br />
