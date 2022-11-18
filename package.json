@@ -9,8 +9,8 @@
     "lint": "eslint src --max-warnings=0",
     "test": "jest --bail",
     "test:watch": "jest --watch",
-    "sb": "start-storybook -s ./public -p 6006",
-    "sb:build": "build-storybook -s ./public",
+    "sb": "start-storybook -p 6006",
+    "sb:build": "build-storybook",
     "sb:serve": "http-server storybook-static",
     "gen": "yarn plop --plopfile generators/plopfile.js"
   },
@@ -18,7 +18,8 @@
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
