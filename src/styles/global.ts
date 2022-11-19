@@ -22,4 +22,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: ${(props) => props.theme.font.sizes.medium};
   }
 
+  button {
+    cursor: pointer;
+  }
+
 `
