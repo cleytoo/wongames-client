@@ -11,7 +11,7 @@ export const parameters = {
     },
   },
   backgrounds: {
-    // default: ''
+    default: 'dark'
   }
 }
 
