@@ -14,5 +14,8 @@ Default.parameters = {
   layout: 'fullscreen',
   viewport: {
     defaultViewport: 'mobile1'
+  },
+  backgrounds: {
+    default: 'dark'
   }
 }

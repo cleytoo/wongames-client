@@ -6,7 +6,7 @@ import { Button } from '.'
 
 describe('<Button />', () => {
   it('should render the medium size by default', () => {
-    const { container } = renderWithTheme(<Button>Buy now</Button>)
+    renderWithTheme(<Button>Buy now</Button>)
 
     expect(screen.getByRole('button', { name: /Buy now/i })).toHaveStyle({
       height: '4rem',
@@ -14,7 +14,7 @@ describe('<Button />', () => {
       'font-size': '1.4rem'
     })
 
-    expect(container.firstChild).toMatchSnapshot()
+    // expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render the small size', () => {
@@ -35,6 +35,7 @@ describe('<Button />', () => {
       'font-size': '1.6rem'
     })
   })
+
   it('should render a fullWidth version', () => {
     renderWithTheme(<Button fullWidth>Buy now</Button>)
 
@@ -50,5 +51,20 @@ describe('<Button />', () => {
 
     expect(screen.getByText(/buy now/i)).toBeInTheDocument()
     expect(screen.getByTestId('icon')).toBeInTheDocument()
+  })
+
+  it('should render Button as a link', () => {
+    renderWithTheme(
+      <Button as="a" href="/link">
+        Buy now
+      </Button>
+    )
+
+    // debug(container)
+
+    expect(screen.getByRole('link', { name: /buy now/i })).toHaveAttribute(
+      'href',
+      '/link'
+    )
   })
 })

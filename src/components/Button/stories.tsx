@@ -26,3 +26,10 @@ export const withIcon = Template.bind({})
 withIcon.args = {
   icon: <ShoppingCart />
 }
+
+export const asLink = Template.bind({})
+asLink.args = {
+  as: 'a',
+  size: 'large',
+  href: '/link'
+}
