@@ -8,7 +8,9 @@ export default {
     children: 'Most Populars',
     color: 'white',
     lineLeft: false,
-    lineBottom: false
+    lineBottom: false,
+    lineColor: 'primary',
+    size: 'medium'
   }
 } as ComponentMeta<typeof Heading>
 
