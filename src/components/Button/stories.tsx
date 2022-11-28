@@ -30,6 +30,6 @@ withIcon.args = {
 export const asLink = Template.bind({})
 asLink.args = {
   as: 'a',
-  size: 'large',
+  size: 'medium',
   href: '/link'
 }
