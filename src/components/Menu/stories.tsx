@@ -16,6 +16,6 @@ Default.parameters = {
     defaultViewport: 'mobile1'
   },
   backgrounds: {
-    default: 'dark'
+    default: 'won-dark'
   }
 }

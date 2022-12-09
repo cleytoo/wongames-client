@@ -8,6 +8,11 @@ export default {
     color: 'white',
     size: 'normal',
     hideOnMobile: false
+  },
+  parameters: {
+    backgrounds: {
+      default: 'won-dark'
+    }
   }
 } as ComponentMeta<typeof Logo>
 

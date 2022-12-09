@@ -32,14 +32,19 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
   }
 
-  html {
-    font-size: 62.5%;
+  body {
+    background-color: ${(props) => props.theme.colors.mainBg};
   }
 
   html, body, #__next {
     height: 100%;
+    font-size: 62.5%;
   }
 
   body, button, select, input, textarea {

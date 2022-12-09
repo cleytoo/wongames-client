@@ -45,7 +45,7 @@ export const Caption = styled.div`
     padding: ${theme.spacings.small};
 
     ${media.greaterThan('medium')`
-      border-radius: 0 0 ${theme.border.radius} ${theme.border.radius};
+      /* border-radius: 0 0 ${theme.border.radius} ${theme.border.radius}; */
       padding: ${theme.spacings.large};
       position: absolute;
       bottom: 0;
