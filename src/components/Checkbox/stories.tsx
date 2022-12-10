@@ -5,7 +5,6 @@ export default {
   title: 'Checkbox',
   component: Checkbox,
   args: {
-    isChecked: true,
     labelColor: 'white'
   },
   argTypes: {
@@ -22,14 +21,15 @@ export default {
 
 const Template: ComponentStory<typeof Checkbox> = (args) => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-    <Checkbox name="category" label="Action" labelFor="action" {...args} />
+    <Checkbox {...args} name="category" label="Action" labelFor="action" />
     <Checkbox
+      {...args}
+      isChecked
       name="category"
       label="Adventure"
       labelFor="adventure"
-      {...args}
     />
-    <Checkbox name="category" label="Strategy" labelFor="strategy" {...args} />
+    <Checkbox {...args} name="category" label="Strategy" labelFor="strategy" />
   </div>
 )
 
