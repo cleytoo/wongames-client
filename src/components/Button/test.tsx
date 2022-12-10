@@ -67,4 +67,26 @@ describe('<Button />', () => {
       '/link'
     )
   })
+
+  it('should render a mininal version', () => {
+    renderWithTheme(
+      <Button icon={<ShoppingCart data-testid="icon" />} minimal>
+        Buy now
+      </Button>
+    )
+
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
+      background: 'none'
+    })
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
+      color: '#F231A5'
+    })
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyleRule(
+      'background',
+      'none',
+      {
+        modifier: ':hover'
+      }
+    )
+  })
 })

@@ -9,7 +9,8 @@ export default {
   args: {
     children: 'Buy now',
     size: 'medium',
-    fullWidth: false
+    fullWidth: false,
+    minimal: false
   },
   argTypes: {
     icon: {
