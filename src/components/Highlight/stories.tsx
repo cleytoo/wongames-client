@@ -1,18 +1,11 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { Highlight } from '.'
-
-const args = {
-  title: 'Read Dead its back',
-  subtitle: 'Come see Johns new adventures',
-  buttonLabel: 'Buy now',
-  buttonLink: '/rdr2',
-  backgroundImage: '/img/red-dead-img.jpg'
-}
+import item from './mock'
 
 export default {
   title: 'Highlight',
   component: Highlight,
-  args
+  args: { ...item }
 } as ComponentMeta<typeof Highlight>
 
 const Template: ComponentStory<typeof Highlight> = (args) => (
@@ -27,5 +20,5 @@ export const WithFloatImage = Template.bind({})
 WithFloatImage.args = {
   floatImage: '/img/red-dead-float.png',
   alignment: 'right',
-  ...args
+  ...item
 }

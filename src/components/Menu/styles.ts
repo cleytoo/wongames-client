@@ -90,16 +90,14 @@ export const MenuFull = styled.nav<MenuFullProps>`
     flex-direction: column;
     justify-content: space-between;
     background-color: ${theme.colors.white};
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: calc(100vh);
+    position: fixed;
+    inset: 0px;
+    height: 100vh;
     overflow: hidden;
     transition: opacity 0.2s ease-in-out;
     opacity: ${isOpen ? 1 : 0};
     pointer-events: ${isOpen ? 'all' : 'none'};
+    z-index: ${theme.layers.menu};
 
     > svg {
       position: absolute;

@@ -38,18 +38,21 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  body {
-    background-color: ${(props) => props.theme.colors.mainBg};
-  }
 
-  html, body, #__next {
-    height: 100%;
+
+  html {
     font-size: 62.5%;
+    height: 100%;
   }
 
-  body, button, select, input, textarea {
+  body {
     font-family: 'Poppins', sans-serif;
+    background-color: ${(props) => props.theme.colors.mainBg};
     font-size: ${(props) => props.theme.font.sizes.medium};
+  }
+
+  button, select, input, textarea {
+    font-family: 'Poppins', sans-serif;
   }
 
   button {

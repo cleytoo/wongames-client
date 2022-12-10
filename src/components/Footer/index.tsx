@@ -58,13 +58,13 @@ export const Footer = () => (
         </Heading>
 
         <nav aria-labelledby="footer resources">
-          <Link href="/">
+          <Link legacyBehavior href="/">
             <a>Home</a>
           </Link>
-          <Link href="/games">
+          <Link legacyBehavior href="/games">
             <a>Store</a>
           </Link>
-          <Link href="/search">
+          <Link legacyBehavior href="/search">
             <a>Buscar</a>
           </Link>
         </nav>

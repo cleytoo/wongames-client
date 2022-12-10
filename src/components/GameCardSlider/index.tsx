@@ -3,15 +3,24 @@ import { Slider, SliderSettings } from 'components/Slider'
 import { CaretLeft, CaretRight } from 'phosphor-react'
 import * as S from './styles'
 
+import { CustomArrowProps } from 'react-slick'
+
 export type GameCardSliderProps = {
   items: GameCardProps[]
   color?: 'white' | 'black'
 }
 
+const Next = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
+  <CaretRight aria-label="next games" weight="bold" {...props} />
+)
+const Prev = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
+  <CaretLeft aria-label="previous games" weight="bold" {...props} />
+)
+
 const settings: SliderSettings = {
   arrows: true,
-  nextArrow: <CaretRight aria-label="next games" weight="bold" />,
-  prevArrow: <CaretLeft aria-label="previous games" weight="bold" />,
+  nextArrow: <Next />,
+  prevArrow: <Prev />,
   slidesToShow: 4,
   infinite: false,
   lazyLoad: 'ondemand',
@@ -49,7 +58,7 @@ const settings: SliderSettings = {
 
 export const GameCardSlider = ({
   items,
-  color = 'black'
+  color = 'white'
 }: GameCardSliderProps) => {
   return (
     <S.Wrapper color={color}>
