@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> Renders with error 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #EAEAEA;
+  border-radius: 0.2rem;
+  padding: 0 1.6rem;
+  border: 0.2rem solid;
+  border-color: #EAEAEA;
+}
+
+.c4:focus-within {
+  box-shadow: 0 0 0.5rem #F231A5;
+}
+
+.c7 {
+  color: #0A0D27;
+  font-size: 1.6rem;
+  padding: 0.8rem 0;
+  padding-left: 1.6rem;
+  background: transparent;
+  border: 0;
+  outline: none;
+  width: 100%;
+}
+
+.c2 {
+  font-size: 1.4rem;
+  color: #0A0D27;
+  cursor: pointer;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2.2rem;
+  color: #8F8F8F;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c6 > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c0 .c3 {
+  border-color: #FF6347;
+}
+
+.c0 .c5,
+.c0 .c1 {
+  color: #FF6347;
+}
+
+.c8 {
+  color: #FF6347;
+  font-size: 1.2rem;
+}
+
+<div
+  class="c0"
+>
+  <label
+    class="c1 c2"
+    for="TextField"
+  >
+    TextField
+  </label>
+  <div
+    class="c3 c4"
+  >
+    <div
+      class="c5 c6"
+    >
+      <svg
+        data-testid="icon"
+        fill="currentColor"
+        height="1em"
+        viewBox="0 0 256 256"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          fill="none"
+          height="256"
+          width="256"
+        />
+        <polyline
+          fill="none"
+          points="224 56 128 144 32 56"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        />
+        <path
+          d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        />
+        <line
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+          x1="110.5"
+          x2="34.5"
+          y1="128"
+          y2="197.7"
+        />
+        <line
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+          x1="221.5"
+          x2="145.5"
+          y1="197.7"
+          y2="128"
+        />
+      </svg>
+    </div>
+    <input
+      class="c7"
+      type="text"
+      value=""
+    />
+  </div>
+  <p
+    class="c8"
+  >
+    Error message
+  </p>
+</div>
+`;
